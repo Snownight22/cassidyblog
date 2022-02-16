@@ -6,10 +6,10 @@ url: https://snownight22.github.io/cassidyBlog/
 resume_site: https://snownight22.github.io/cassidyBlog/
 github: https://github.com/Snownight22/
 baseurl: "/cassidyBlog"
-description: Cassidy's Blog
-meta_description: 田涛;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+description: Snownight22的博客
+meta_description: Snownight22;个人博客;非淡泊无以明志;非宁静无以致远
+motto: 非淡泊无以明志;非宁静无以致远.
+banner: 非淡泊无以明志;非宁静无以致远。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
