@@ -17,6 +17,21 @@ paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
+defaults:
+  -
+    scope:
+      path: "" # 一个空的字符串代表项目中所有的文件
+      type: "posts" #类型是posts的文件
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "projects"
+      type: "pages" # 以前的 `page`， 在 Jekyll 2.2 里。
+    values:
+      layout: "project" # 覆盖之前的默认布局
+      author: "Mr. Hyde"
+
 github_username: Snownight22
 
 # Build settings
