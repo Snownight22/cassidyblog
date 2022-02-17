@@ -9,7 +9,7 @@ baseurl: "/cassidyBlog"
 description: Snownight22的博客
 meta_description: Snownight22;个人博客;非淡泊无以明志;非宁静无以致远
 motto: 非淡泊无以明志;非宁静无以致远.
-banner: 非淡泊无以明志;非宁静无以致远。
+banner: For cassidy
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
