@@ -13,11 +13,14 @@ layout: default
         <div class="wrapper">
             <header class="post-header">
               <h1 class="post-title">{{ page.title }}</h1>
-              <!--
-                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-              -->
+              
+              <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+              
+			  <!--
               <div class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span> By <a target="_blank" href="{{ '/' | prepend: site.baseurl }}">{{ site.author }}</a></div>
+			  
               <br />
+			  -->
             </header>
             <article class="post-content">
               {{ content }}
