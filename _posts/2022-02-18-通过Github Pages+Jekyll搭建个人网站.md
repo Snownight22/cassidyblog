@@ -17,20 +17,23 @@ GitHub Pages是一个静态的站点托管服务，它直接从GitHub的存储�
 ### 添加一个新仓库
 登陆github后，在右上角点击+号，New repository, 添加一个新仓库。
 
+![githubCreateRepo.jpg]({{site.baseurl}}/styles/images/githubPages/githubCreateRepo.jpg)  
+起一个你喜欢的名字。注意一定要是public的，private的pages要收费的哦！  
 ![githubCreateRepo1.jpg]({{site.baseurl}}/styles/images/githubPages/githubCreateRepo1.jpg)
 
 ### 创建主页
 创建成功后将仓库克隆到本地，
 git clone https://username.github.com/test.git
-或按github提示在本地建立一个git文件夹，然后跟github此项目关联
+或按github提示在本地建立一个git文件夹，然后跟github此项目关联。
 
 ![gitCommit.jpg]({{site.baseurl}}/styles/images/githubPages/gitCommit.jpg)
 
-在仓库主目录下添加一个主页 index.html，在里面随便写点内容
+在仓库主目录下添加一个主页 index.html，在里面随便写点内容。
 
 ![createIndex.jpg]({{site.baseurl}}/styles/images/githubPages/createIndex.jpg)
 
-然后把它push到你的远程仓库。
+然后把它push到你的远程仓库。  
+(Git的操作可以参考[廖雪峰的git教程](https://www.liaoxuefeng.com/wiki/896043488029600))
 
 ### 发布主页
 在github远程仓库设置pages:
@@ -73,13 +76,13 @@ jekyll主题中我选择了lessOrMore的主题。
 
 ![lessOrMoreConfig.jpg]({{site.baseurl}}/styles/images/githubPages/lessOrMoreConfig.jpg)
 
-这个主题没有评论功能，这里我添加了gitalk来处理评论模块，可以查看[11111](www.baidu.com)，里面记录了如何给该主题添加gitalk评论模块。
+这个主题没有评论功能，这里我添加了gitalk来添加评论功能，可以查看[11111](www.baidu.com)，里面记录了如何给该主题添加gitalk评论模块。
 
 至此，网站搭建完毕，可以在你的博客写文章了。
 
 
 ---
-参考：  
+#### 参考：  
 [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)  
 [LessOrMore主页](https://github.com/luoyan35714/LessOrMore)  
 [Jekyll文档指南](http://jekyllcn.com/docs/home/)  
