@@ -24,6 +24,7 @@ defaults:
       type: "posts" #类型是posts的文件
     values:
       layout: "post"
+      author: "Snownight22"
   -
     scope:
       path: "projects"
