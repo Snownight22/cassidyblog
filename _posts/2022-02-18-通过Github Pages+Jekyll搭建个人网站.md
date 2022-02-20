@@ -18,12 +18,14 @@ GitHub Pages是一个静态的站点托管服务，它直接从GitHub的存储�
 登陆github后，在右上角点击+号，New repository, 添加一个新仓库。
 
 ![githubCreateRepo.jpg]({{site.baseurl}}/styles/images/githubPages/githubCreateRepo.jpg)  
+
 起一个你喜欢的名字。注意一定要是public的，private的pages要收费的哦！  
+
 ![githubCreateRepo1.jpg]({{site.baseurl}}/styles/images/githubPages/githubCreateRepo1.jpg)
 
 ### 创建主页
 创建成功后将仓库克隆到本地，
-git clone https://username.github.com/test.git
+`git clone https://username.github.com/test.git`
 或按github提示在本地建立一个git文件夹，然后跟github此项目关联。
 
 ![gitCommit.jpg]({{site.baseurl}}/styles/images/githubPages/gitCommit.jpg)
@@ -45,15 +47,15 @@ source中选分支根目录，然后点save。你主页的地址会出现在上�
 ## 使用Jekyll生成博客
 Jekyll是一个可以将纯文本转换为静态博客网站的工具，本地可以安装jekyll，然后在博客目录启动jekyll，就可以通过访问本地地址http://127.0.0.1:4000来本地预览网站效果。
 ### 安装Jekyll
-1. Jekyll安装需要Ruby支持，点击https://rubyinstaller.org/下载并安装Ruby；
-2. 点击https://rubygems.org/pages/download下载并安装RubyGems；
-3. 安装jekyll，在命令行执行 gem install jekyll；
-4. 从http://jekyllthemes.org/上选择一个jekyll主题，下载下来，将所有文件放到之前克隆到本地的仓库根目录中，执行jekyll serve，就可以在本地预览博客了。
+1. Jekyll安装需要Ruby支持，点击<https://rubyinstaller.org/>下载并安装Ruby；
+2. 点击<https://rubygems.org/pages/download>下载并安装RubyGems；
+3. 安装jekyll，在命令行执行 `gem install jekyll`；
+4. 从<http://jekyllthemes.org/>上选择一个jekyll主题，下载下来，将所有文件放到之前克隆到本地的仓库根目录中，执行`jekyll serve`，就可以在本地预览博客了。
 
 ![jekyllStart.jpg]({{site.baseurl}}/styles/images/githubPages/jekyllStart.jpg)
 
 ### Jekyll目录结构
-Jekyll官网（http://jekyllcn.com/docs/structure/）　详细介绍了jekyll的目录结构。
+Jekyll官网（<http://jekyllcn.com/docs/structure/>）　详细介绍了jekyll的目录结构。
 
 ![jekyllDirStruction.jpg]({{site.baseurl}}/styles/images/githubPages/jekyllDirStruction.jpg)
 
@@ -72,7 +74,7 @@ jekyll主题中我选择了lessOrMore的主题。
 
 ![lessOrMoreTheme.jpg]({{site.baseurl}}/styles/images/githubPages/lessOrMoreTheme.jpg)
 
-可以通过主题主页https://github.com/luoyan35714/LessOrMore　查看主题的主要修改配置：
+可以通过主题主页<https://github.com/luoyan35714/LessOrMore>　查看主题的主要修改配置：
 
 ![lessOrMoreConfig.jpg]({{site.baseurl}}/styles/images/githubPages/lessOrMoreConfig.jpg)
 
