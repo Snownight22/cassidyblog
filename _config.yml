@@ -2,7 +2,7 @@ title: 二十二夜的雪
 subtitle: [TT工作室]
 keywords: 二十二夜的雪
 description: 非淡泊无以明志；非宁静无以致远。
-baseurl: "/CassidyBlog" # the subpath of your site, e.g. /blog
+baseurl: "/cassidyblog" # the subpath of your site, e.g. /blog
 url: "https://snownight22.github.io" # 你的域名
 page_no_title: "Snownight22's blog" # 文章无标题时默认显示内容
 beian: # "备案号"
@@ -42,7 +42,7 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-paginate
 
 # Pageinate settings
