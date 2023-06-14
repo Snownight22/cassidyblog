@@ -1,13 +1,18 @@
-<footer class="footer" role="contentinfo">
-	<div class="container">
-		<p class="copyright">Copyright &copy; 2014-{{ site.time | date: '%Y' }} <a href="{{site.resume_site}}"><code>{{ site.author }}</code></a>.</p>
-		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="">Snownight22</a></p>
+	<footer>
+    <span class="copyright">© {% if site.start %}{{ site.start }}-{% endif %}{{ site.now }} {{ site.name }}</span>
+    <div>
+        <p class="comment">
+            <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
+            Theme <a href="https://github.com/soyaine/jekyll-theme-diary">Diary</a> 
+            by <a href="https://github.com/Snownight22">Snownight22</a><br>
+		</p>
+        
+		<ul class="contact">
+            <li><a href="https://github.com/{{ site.link.github }}"><i class="fa fa-2x fa-github"></i> </a> </li>
+            <li><a href="{{ site.link.weibo }}"><i class="fa fa-2x fa-weibo"></i> </a> </li>
+            <li><a href="{{ site.link.weixin }}"><i class="fa fa-2x fa-weixin"></i> </a> </li>
+            <li><a href="mailto:{{ site.link.email }}"><i class="fa fa-envelope fa-2x"></i></a></li>
+            <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}"><i class="fa fa-2x fa-feed"></i> </a> </li>
+        </ul>
 	</div>
 </footer>
-
-<script src="{{ '/styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/holder.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/lessismore.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/styles/js/application.js' | prepend: site.baseurl }}"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

@@ -1,45 +1,65 @@
-# Site settings
-name: 二十二夜的雪
-email: tiantao714@163.com
+title: 二十二夜的雪
+subtitle: [TT工作室]
+keywords: 二十二夜的雪
+description: 非淡泊无以明志；非宁静无以致远。微信公众号：.
+baseurl: "/TTworksBlog" # the subpath of your site, e.g. /blog
+url: "https://snownight22.github.io" # 你的域名
+page_no_title: "Snownight22's blog" # 文章无标题时默认显示内容
+beian: # "备案号"
 author: Snownight22
-url: https://snownight22.github.io/cassidyBlog/
-resume_site: https://snownight22.github.io/cassidyBlog/
-github: https://github.com/Snownight22/
-baseurl: "/cassidyBlog"
-description: Snownight22的博客
-meta_description: Snownight22;个人博客;非淡泊无以明志;非宁静无以致远
-motto: 博望而约取;厚积而薄发.
-banner: For cassidy
+email: tiantao5@gmail.com
 
-#permalink: /:categories/:year/:month/:day/:title/
-permalink: /:year/:month/:day/:title/
-paginate: 10
-#paginate_path: "blog/page:num"
+name: Snownight22
+permalink: :year/:month/:day/:title
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
-plugins: [jekyll-paginate]
+# Your blog's start year and this year, showed in the footer left
+# start is optional
+start: 2022
+now: 2023
+ 
+# Social links showed in the footer
+# You just need modify the nickname of github and twitter
+link:
+  email : tiantao5@gmail.com
+  github : Snownight22
+  weibo : https://weibo.com/u/1516249411
+  weixin : https://mp.weixin.qq.com/s/zOmCbSw5DADT3-7l5yEt2Q
 
-defaults:
-  -
-    scope:
-      path: "" # 一个空的字符串代表项目中所有的文件
-      type: "posts" #类型是posts的文件
-    values:
-      layout: "post"
-      author: "Snownight22"
-  -
-    scope:
-      path: "projects"
-      type: "pages" # 以前的 `page`， 在 Jekyll 2.2 里。
-    values:
-      layout: "project" # 覆盖之前的默认布局
-      author: "Mr. Hyde"
+# Links in the navigation, you can modify both link name and link url
+nav:
+   首页: "/"
+   归档: "/archive"
+   分类: "/category"
+   标签: "/tags"
+   关于: "/about"
 
-github_username: Snownight22
-
-# Build settings
+   
 markdown: kramdown
+highlighter: rouge
 
-revolvermaps: 5w7p23mwv0c
-baidu_analysis: 9
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+# Pageinate settings
+paginate: 8 # 分页大小
+paginate_path: "page/:num/"
+
+
+gitalk:
+  enable: true
+  clientID: 7bd21fe83445766f6c9d
+  clientSecret: b3aeead12d9e287bae886a2cb3e9597768ff26ae
+
+
+# leanCloud 配置
+leanCloud:
+  enable: false
+  appId: vtrlGWXgg2lOLvgkgiLacWTE-gzGzoHsz
+  appKey: QXTrNSAjMzhhYlGW1i1I3qWe
+  counter: counter
 

@@ -6,8 +6,10 @@ categories: 杂项
 tag: 教程
 ---
 
+<!--
 * content
 {:toc}
+-->
 
 
 GitHub Pages是一个静态的站点托管服务，它直接从GitHub的存储库中获取HTML、CSS和JavaScript文件，通过构建系统选择性地运行这些文件，并发布一个网站。我们都可以从自己的Github上通过pages发布一个个人网站。
@@ -84,7 +86,7 @@ jekyll主题中我选择了lessOrMore的主题。
 
 
 ---
-#### 参考：  
+参考：  
 [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)  
 [LessOrMore主页](https://github.com/luoyan35714/LessOrMore)  
 [Jekyll文档指南](http://jekyllcn.com/docs/home/)  

@@ -2,146 +2,90 @@
 layout: default
 ---
 
- <div class="container docs-container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="sidebar hidden-print" role="complementary">
-            <div id="navigation">
-              <h1>归档</h1>
-              <ul class="nav sidenav">
-                {% capture topping %}false{% endcapture %}
-                {% for post in site.posts  %}
-                  {% if post.topping %}
-                    {% capture topping %}{{post.topping}}{% endcapture %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-                {% if topping == 'true' %}
-                  <li><a href="#topping">置顶</a>
-                {% endif %}
 
-                {% for post in site.posts  %}
-                
-                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-                  {% if forloop.first %}
-                    <li><a href="#year_{{this_year}}">{{this_year}}</a>
-                      <ul class="nav">
-                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}</a></li>
-                  {% endif %}
-                  {% if forloop.last %}
-                        </ul>
-                      </li>
-                  {% else %}
-                    {% if this_year != next_year %}
-                        </ul>
-                      </li>
-                      <li><a href="#year_{{next_year}}">{{next_year}}</a>
-                        <ul class="nav">
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-                    {% else %}    
-                      {% if this_month != next_month %}
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-                      {% endif %}
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </ul>
-              <div style="height: 200px;width: 200px;">
-                
-                <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i={{ site.revolvermaps }}&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
-                </script>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9" role="main">
-          <div class="panel docs-content">
-            <div class="wrapper">
-              <div class="home">
-                {% capture topping %}false{% endcapture %}
-                {% for post in site.posts  %}
-                  {% if post.topping %}
-                    {% capture topping %}{{post.topping}}{% endcapture %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              
-                {% if topping == 'true' %}
-                <h2 class="topping">
-                  置顶文章
-                  <span class="anchor-target" id="topping"></span>
-                  <a href="#topping" name="topping" class="anchor glyphicon glyphicon-link"></a>
-                </h2>
-                <ul>
-                  {% for post in site.posts  %}
-                    {% if post.topping %}
-                      <ol class="breadcrumb">
-                        <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}{{topping}}</a></li>
-                      </ol>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-                {% endif %}
+<style>
+    #calendar {
+        display: none;
+    }
+    #closeBtn, #openBtn {
+        display: none;
+    }
+</style>
 
-                {% for post in site.posts  %}
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
 
-                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+<div class="posts">
+  {% for post in paginator.posts %}
+    <article class="post">
+      <h1>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h1>
 
-                  {% if forloop.first %}
-                    <h1>
-                      {{this_year}}
-                      <span class="anchor-target" id="year_{{this_year}}"></span>
-                      <a href="#year_{{this_year}}" name="year_{{this_year}}" class="anchor glyphicon glyphicon-link"></a>
-                    </h1>
-                    <h2>
-                      {{this_month}}
-                      <span class="anchor-target" id="month_{{this_year}}_{{this_month}}"></span>
-                      <a href="#month_{{this_year}}_{{this_month}}" name="month_{{this_year}}_{{this_month}}" class="anchor glyphicon glyphicon-link"></a>
-                    </h2>
-                    <ul>
-                  {% endif %}
+      <div clsss="meta">
+        <span class="date">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </span>
 
-                  <ol class="breadcrumb">
-                   <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                  </ol>
-                  {% if forloop.last %}
-                    </ul>
-                  {% else %}
-                    {% if this_year != next_year %}
-                      </ul>
-                      <h1>
-                        {{next_year}}
-                        <span class="anchor-target" id="year_{{next_year}}"></span>
-                        <a href="#year_{{next_year}}" name="year_{{next_year}}" class="anchor glyphicon glyphicon-link"></a>
-                      </h1>
-                      <h2>
-                        {{next_month}}
-                        <span class="anchor-target" id="month_{{next_year}}_{{next_month}}"></span>
-                        <a href="#month_{{next_year}}_{{next_month}}" name="month_{{next_year}}_{{next_month}}" class="anchor glyphicon glyphicon-link"></a>
-                      </h2>
-                      <ul>
-                    {% else %}    
-                      {% if this_month != next_month %}
-                        </ul>
-                        <h2>
-                          {{next_month}}
-                          <span class="anchor-target" id="month_{{next_year}}_{{next_month}}"></span>
-                          <a href="#month_{{next_year}}_{{next_month}}" name="month_{{next_year}}_{{next_month}}" class="anchor glyphicon glyphicon-link"></a>
-                        </h2>
-                        <ul>
-                      {% endif %}
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul class="tag">
+          {% for cate in post.categories %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}/category#{{ cate }}">
+              {{ cate }}
+            </a>
+          </li>
+          {% endfor %}
+          {% for tag in post.tags %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+              {{ tag }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <!-- 显示每篇博客阅读量, id 将作为查询条件 -->
+        <span id={{post.url}} class="leancloud-visitors" data-flag-title={{post.title}}>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-text">阅读量 </span>
+            <span class="leancloud-visitors-count">-</span>
+        </span>    
       </div>
-    </div>
+
+      <div class="entry">
+        <!--{{ post.excerpt | truncate: 200 }}-->
+        {{ post.content | strip_html | truncate:160 }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
+        ← 上一页
+      </a>
+    </span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
+        下一页 →
+      </a>
+    </span>
+  {% endif %}
+</div>
+
+{% if site.leanCloud.enable %}
+{% include readerStatistics.html %}
+<script>
+    $(function() {
+      var Counter = AV.Object.extend(name);
+      showAllCount(Counter);
+    });
+</script>
+{% endif %}

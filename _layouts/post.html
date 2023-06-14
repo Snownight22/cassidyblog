@@ -1,32 +1,60 @@
 ---
 layout: default
+title: {{ page.title }}
 ---
-<div class="container docs-container">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="sidebar hidden-print" role="complementary">
-        {% include lefttree.html %} 
-      </div>
-    </div>
-    <div class="col-md-9" role="main">
-      <div class="panel docs-content">
-        <div class="wrapper">
-            <header class="post-header">
-              <h1 class="post-title">{{ page.title }}</h1>
-              
-              <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-              
-			  <!--
-              <div class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span> By <a target="_blank" href="{{ '/' | prepend: site.baseurl }}">{{ site.author }}</a></div>
-			  -->
-              <br />
-            </header>
-            <article class="post-content">
-              {{ content }}
-            </article>
-			{% include comment.html %}
-        </div>
-      </div>
-    </div>
-  </div>
+
+<link rel="stylesheet" href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}">
+
+<header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            <i class="icon-post-date">{{ page.date | date: "%b %-d, %Y" }}</i>
+        </time>
+        {% if page.categories.size > 0 %} |
+        <span class="post-category">
+            <i class="icon-post-category">
+            {% for page_category in page.categories %}
+                <a href="{{ site.baseurl }}/category/#{{ page_category }}">{{ page_category }}</a>
+            {% endfor %}
+            </i>
+        </span> 
+        {% endif %} 
+
+        {% if page.tags.size > 0 %} |
+        <span class="post-tag">
+        <i class="icon-post-tag">
+        {% for page_tag in page.tags %}
+            <a href="{{ site.baseurl }}/tags/#{{ page_tag }}">{{ page_tag }}</a>
+        {% endfor %}
+        </i>
+        </span>{% endif %}
+
+        <!-- 阅读量统计， id 将作为查询条件 -->
+        <span id={{page.url}} class="leancloud-visitors" data-flag-title={{page.title}}>
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-text">阅读量 </span>
+            <span class="leancloud-visitors-count">-</span>
+        </span>
+    </p>
+</header>
+
+<div class="post-content" itemprop="articleBody">
+    <!--{{ content }}-->
+    {{ page.content }}
 </div>
+
+{% if site.gitalk.enable %}
+{% include comment.html %}
+{% endif %}
+
+{% if site.leanCloud.enable %}
+{% include readerStatistics.html %}
+<script>
+    $(function() {
+      var Counter = AV.Object.extend(name);
+      addCount(Counter);
+      showCount(Counter);
+    });
+</script>
+{% endif %}
