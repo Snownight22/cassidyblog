@@ -37,7 +37,8 @@ layout: default
       </div>
 
       <div class="entry">
-        {{ post.excerpt | truncate: 160 }}
+        <!--{{ post.excerpt | truncate: 160 }}-->
+        {{ post.content | strip_html | truncate:160 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
