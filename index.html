@@ -2,16 +2,6 @@
 layout: default
 ---
 
-
-<style>
-    #calendar {
-        display: none;
-    }
-    #closeBtn, #openBtn {
-        display: none;
-    }
-</style>
-
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
@@ -44,18 +34,10 @@ layout: default
           </li>
           {% endfor %}
         </ul>
-
-        <!-- 显示每篇博客阅读量, id 将作为查询条件 -->
-        <span id={{post.url}} class="leancloud-visitors" data-flag-title={{post.title}}>
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-text">阅读量 </span>
-            <span class="leancloud-visitors-count">-</span>
-        </span>    
       </div>
 
       <div class="entry">
-        <!--{{ post.excerpt | truncate: 200 }}-->
-        {{ post.content | strip_html | truncate:160 }}
+        {{ post.excerpt | truncate: 160 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
@@ -79,13 +61,3 @@ layout: default
     </span>
   {% endif %}
 </div>
-
-{% if site.leanCloud.enable %}
-{% include readerStatistics.html %}
-<script>
-    $(function() {
-      var Counter = AV.Object.extend(name);
-      showAllCount(Counter);
-    });
-</script>
-{% endif %}
