@@ -1,5 +1,22 @@
-{% include svg-icons.html %}
-
-{% if site.footer-text %}
-<p>{{ site.footer-text }}</p>
-{% endif %}
+	<footer>
+    <span class="copyright">© {% if site.start %}{{ site.start }}-{% endif %}{{ site.now }} {{ site.name }}</span>
+    <div>
+        <p class="comment">
+            版权声明： 
+            <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/3.0/cn/" 
+              target="_blank" class="hide-target-icon" 
+              title="本站(博客)作品全部采用知识共享署名-非商业性使用-禁止演绎 3.0 中国大陆许可协议进行许可。转载请注明出处。">
+              <img alt="知识共享许可协议" src="{{ '/assets/img/copyright-88x31.png' | prepend: site.baseurl }}">
+            </a>      
+		</p>
+        
+		<ul class="contact">
+            <li><a href="https://github.com/{{ site.link.github }}"><i class="fa fa-2x fa-github"></i> </a> </li>
+            <li><a href="{{ site.link.weibo }}"><i class="fa fa-2x fa-weibo"></i> </a> </li>
+            <li><a href="{{ site.link.weixin }}"><i class="fa fa-2x fa-weixin"></i> </a> </li>
+            <li><a href="{{ site.link.link }}"><i class="fa fa-2x fa-link"></i> </a> </li>
+            <li><a href="mailto:{{ site.link.email }}"><i class="fa fa-envelope fa-2x"></i></a></li>
+            <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}"><i class="fa fa-2x fa-feed"></i> </a> </li>
+        </ul>
+	</div>
+</footer>
