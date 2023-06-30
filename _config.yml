@@ -5,7 +5,7 @@ imgurl: /cassidyblog
 
 # Your blog's start year and this year, showed in the footer left
 # start is optional
-start: 2023
+start: 2022
 now: 2023
  
 # Social links showed in the footer
@@ -42,6 +42,8 @@ nav:
    
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
 
 sass:
   sass_dir: _sass
