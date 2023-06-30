@@ -4,8 +4,14 @@
             <li><i class="fa fa-paper-plane-o"></i></li>
 			<!--get the nav links in  _config.yml -->
 			{% for link in site.nav %}
-			<li><a href="{{ site.baseurl }}{{ link[1]}}">{{ link[0] }}</a></li>
+			<!--<li><a href="{{ site.baseurl }}{{ link[1]}}">{{ link[0] }}</a></li>-->
+			<li><a href="{{ site.baseurl }}{{ link.path}}">
+                <i class="fa {{ link.icon }}" title="{{ link.title }}"></i>
+                <!--{{ link.title }}-->
+                </a>
+            </li>
 			{% endfor %}
+            <!--<li><a href=""><i class="fa fa-search" title="站内搜索"></i> </a> </li>-->
         </ul>
     </nav>
 

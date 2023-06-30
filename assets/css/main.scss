@@ -54,7 +54,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     position: relative;
-    margin: 0 3.6em 0 0;
+    margin: 0 3em 0 0;
     list-style: none;
     color: #aaa6ab;
 }
@@ -73,6 +73,7 @@ nav ul li:first-child {
 
 nav ul li:last-child {
     margin-right: 0;
+    // font-size: .6em;
 }
 
 .nav-button {
