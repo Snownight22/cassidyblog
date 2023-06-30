@@ -1,0 +1,110 @@
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
+<script>
+    AV.initialize('{{site.leanCloud.appId}}', '{{site.leanCloud.appKey}}');
+</script>
+<script>
+    // 自己创建的Class的名字
+    var name='{{site.leanCloud.counter}}';
+    function createRecord(Counter, url){
+        // 设置 ACL
+        var acl = new AV.ACL();
+        acl.setPublicReadAccess(true);
+        acl.setPublicWriteAccess(true);
+        var $element = $(document.getElementById(url));
+
+        var title = $element.attr('data-flag-title').trim();
+        var url = $element.attr('id').trim();
+        var newcounter = new Counter();
+        newcounter.setACL(acl);
+        newcounter.set("Title", title);
+        newcounter.set("Url", url);
+        newcounter.set("Time", 1);
+        // 获得span的所有元素
+        var allcounter=[];
+        allcounter.push(newcounter);
+
+        AV.Object.saveAll(allcounter).then(function (todo) {
+            // 成功保存记录之后
+            console.log('创建记录成功！');
+        }, function (error) {
+            // 异常错误 
+             console.error('创建记录失败: ' + error.message);
+        });
+        $element.find(".leancloud-visitors-count").text("1");
+    }
+
+    function addCount(Counter) {
+        var $visitors = $(".leancloud-visitors");
+        var url = $visitors.attr('id').trim();
+        var title = $visitors.attr('data-flag-title').trim();
+        var query = new AV.Query(Counter);
+        query.equalTo("Url", url);
+        query.find().then(function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.increment("Time");
+                counter.save().then(function(todo) {
+                    console.log("increse number ok!");
+                    var $element = $(document.getElementById(url));
+                    var times = counter.get("Time");
+                    $element.find(".leancloud-visitors-count").text(times);
+                }, function(error) {
+                    console.log("Error:" + error.code + ", " + error.message);
+                });
+            } else {
+                console.log("创建计数：" + url);
+                createRecord(Counter, url);
+            }
+        }, function(error) {
+            console.log("Error:" + error.code + ", " + error.message);
+        });
+    }
+
+    function showCount(Counter){
+        var query = new AV.Query(name);
+        var $postInfo = $(".leancloud-visitors");
+        var url = $postInfo.attr('id').trim();
+        query.equalTo("Url", url);
+        query.find().then(function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                var $element = $(document.getElementById(url));
+                var times = counter.get("Time");
+                $element.find(".leancloud-visitors-count").text(times);
+            } else {
+                console.log("未找到对应计数:"+ url);
+            }
+        }, function(error) {
+            console.log("Error:" + error.code + ", " + error.message);
+        });
+    }
+
+    function showAllCount(Counter) {
+        var query = new AV.Query(name);
+        var elements = document.getElementsByClassName("leancloud-visitors");
+        var urlList = [];
+        for (var i=0; i < elements.length; i++) {
+            var url = elements[i].id;
+            urlList.push(url);
+        }
+        query.containedIn("Url", urlList);
+        query.find().then(function(results) {
+            for (var i = 0; i < results.length; i++) {
+                var counter = results[i];
+                var url = counter.get("Url");
+                var times = counter.get("Time");
+                var $element = $(document.getElementById(url));
+                $element.find(".leancloud-visitors-count").text(times);
+            }
+        }, function(error) {
+            console.log("Error:" + error.code + ", " + error.message);
+        });
+    }
+
+    // $(function() {
+    //   var Counter = AV.Object.extend(name);
+    //   // addCount(Counter);
+    //   // showCount(Counter);
+    //   showAllCount(Counter);
+    // });
+</script>

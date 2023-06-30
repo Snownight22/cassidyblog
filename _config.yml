@@ -32,3 +32,16 @@ sass:
 
 plugins:
 - jekyll-feed
+
+gitalk:
+  enable: true
+  clientID: 7bd21fe83445766f6c9d
+  clientSecret: b3aeead12d9e287bae886a2cb3e9597768ff26ae
+
+
+# leanCloud 配置
+leanCloud:
+  enable: true
+  appId: vtrlGWXgg2lOLvgkgiLacWTE-gzGzoHsz
+  appKey: QXTrNSAjMzhhYlGW1i1I3qWe
+  counter: counter
