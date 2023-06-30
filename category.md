@@ -4,6 +4,12 @@ title: 分类
 permalink: /category/
 ---
 
+<style>
+  #closeBtn, #openBtn {
+      display: none;
+  }
+</style>
+
 <div class="category">
   <h1>文章分类</h1>
 
