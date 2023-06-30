@@ -11,12 +11,12 @@ permalink: /archive/
 <ul class="archive">
   {% for post in site.posts %}
     {% unless post.next %}
-      <h2>{{ post.date | date: '%Y' }}</h2>
+      <h2 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h2>{{ post.date | date: '%Y' }}</h2>
+        <h2 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
       {% endif %}
     {% endunless %}
 
@@ -32,3 +32,19 @@ permalink: /archive/
     </li>
   {% endfor %}
 </ul>
+
+<!--添加计数-->
+<script>
+  var yearList = {};
+  {% for post in site.posts %}
+      var year = "{{ post.url | slice: 1, 4 }}";
+      if (yearList[year] == null) {
+        yearList[year] = 1;
+      } else {
+        yearList[year]++;
+      }
+  {% endfor %}
+  for (var year in yearList) {
+    document.getElementById(year).innerText = year + " " + "(" + yearList[year] +")";
+  }
+</script>
