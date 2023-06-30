@@ -89,7 +89,7 @@ function calInit() {
                 var ele = document.getElementById(n);
                 if(ele){
                     ele.innerHTML = "<a href='" + url[n].url + "'>" + this.render[n].date + "</a>";
-                    ele.title = url[n].excerpt;
+                    ele.title = url[n].title;
                     //render[n]["url"] = url[n];
                 }
             }
