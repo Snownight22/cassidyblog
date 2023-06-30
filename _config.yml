@@ -37,7 +37,7 @@ nav:
       icon: "fa-info-circle"
     - title: "站内搜索"
       english: "Search"
-      path: ""
+      path: "/search"
       icon: "fa-search"
    
 markdown: kramdown

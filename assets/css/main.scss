@@ -201,4 +201,13 @@ footer ul.contact li:last-child {
     color: #5e5d5d;
 }
 
+.widget {
+    width: 100%;
+    margin-bottom: 10em;
+}
+
+.widget i {
+    position: absolute;
+}
+
 @import "layout";
