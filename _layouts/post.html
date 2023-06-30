@@ -16,6 +16,7 @@ title: {{ page.title }}
             <i class="icon-post-category">
             {% for page_category in page.categories %}
                 <a href="{{ site.baseurl }}/category/#{{ page_category }}">{{ page_category }}</a>
+                <!--{% unless forloop.last %} | {% endunless %}-->
             {% endfor %}
             </i>
         </span> 
@@ -28,7 +29,8 @@ title: {{ page.title }}
             <a href="{{ site.baseurl }}/tags/#{{ page_tag }}">{{ page_tag }}</a>
         {% endfor %}
         </i>
-        </span>{% endif %}
+        </span>
+        {% endif %}
 
         <!-- 阅读量统计， id 将作为查询条件 -->
         <span id={{page.url}} class="leancloud-visitors" data-flag-title={{page.title}}>
