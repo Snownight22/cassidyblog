@@ -208,6 +208,14 @@ footer ul.contact li:last-child {
 
 .widget i {
     position: absolute;
+    padding: 8px;
+    min-width: 40px;
+}
+
+.widget input {
+    width: 40%;
+    padding: 6px;
+    text-align: center;
 }
 
 @import "layout";
