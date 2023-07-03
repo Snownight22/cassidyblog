@@ -35,6 +35,14 @@ permalink: /archive/
         {{ post.title }}
       </a>
       <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+
+      <!-- 阅读量统计， id 将作为查询条件 -->
+      <span id={{ post.url | prepend: site.baseurl }} class="leancloud-visitors" data-flag-title={{post.title}}>
+        <span class="post-meta-divider">|</span>
+        <span class="post-meta-item-text">阅读量 </span>
+        <span class="leancloud-visitors-count">-</span>
+      </span>
+
     </li>
   {% endfor %}
 </ul>
@@ -54,3 +62,13 @@ permalink: /archive/
     document.getElementById(year).innerText = year + " " + "(" + yearList[year] +")";
   }
 </script>
+
+{% if site.leanCloud.enable %}
+{% include readerStatistics.html %}
+<script>
+    $(function() {
+      var Counter = AV.Object.extend(name);
+      showAllCount(Counter);
+    });
+</script>
+{% endif %}
