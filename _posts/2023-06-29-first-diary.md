@@ -2,7 +2,7 @@
 layout: post
 title: "换主题了" 
 date: 2023-06-29   
-categories: [me, mid-year review]
+categories: [Plan&Review]
 excerpt: ""
 ---
 

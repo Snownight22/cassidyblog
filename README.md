@@ -56,6 +56,10 @@ Acknowladgment
 - Icon: [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 - Typesetting for Chinese: [typo.css](https://github.com/sofish/typo.css) (You can remove it if you don't need.)
 
+More
+-------
+
+
 License
 ---------
 MIT
