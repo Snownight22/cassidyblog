@@ -28,7 +28,7 @@ ngx_array_t 数组头结构内定义了数组结构总共能够容纳数据的�
 
 #### 数组结构图
 
-![memoryPoolDataStruction_array.svg]({{site.baseurl}}/styles/images/nginx/memoryPoolDataStruction_array.svg)  
+![memoryPoolDataStruction_array.svg]({{site.imgurl}}/styles/images/nginx/memoryPoolDataStruction_array.svg)  
 
 ### 数组操作函数
 

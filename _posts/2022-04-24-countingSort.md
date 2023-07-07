@@ -18,7 +18,7 @@ topping: true
 
 ### 动图演示
 
-![countingSort.webp]({{site.baseurl}}/styles/images/algorithm/countingSort.webp)  
+![countingSort.webp]({{site.imgurl}}/styles/images/algorithm/countingSort.webp)  
 
 
 ### 代码示例

@@ -21,7 +21,7 @@ topping: true
 
 ### 动图演示
 
-![shellSort.webp]({{site.baseurl}}/styles/images/algorithm/shellSort.webp)  
+![shellSort.webp]({{site.imgurl}}/styles/images/algorithm/shellSort.webp)  
 
 ### 代码示例
 

@@ -38,7 +38,7 @@ ngx_list_t 链表头结构内包含了链表的第一个元素，last 指向链�
 
 #### 链表数据结构图
 
-![memoryPoolDataStruction_listt.svg]({{site.baseurl}}/styles/images/nginx/memoryPoolDataStruction_listt.svg)  
+![memoryPoolDataStruction_listt.svg]({{site.imgurl}}/styles/images/nginx/memoryPoolDataStruction_listt.svg)  
 
 ### 链表操作函数
 

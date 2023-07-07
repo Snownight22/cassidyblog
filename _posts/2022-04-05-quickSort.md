@@ -20,11 +20,11 @@ topping: true
 步骤2排序有两种方式。  
 方式一：  
 
-![quickSort1.webp]({{site.baseurl}}/styles/images/algorithm/quickSort1.webp)  
+![quickSort1.webp]({{site.imgurl}}/styles/images/algorithm/quickSort1.webp)  
 
 方式二：  
 
-![quickSort2.webp]({{site.baseurl}}/styles/images/algorithm/quickSort2.webp)  
+![quickSort2.webp]({{site.imgurl}}/styles/images/algorithm/quickSort2.webp)  
 
 ### 代码示例
 

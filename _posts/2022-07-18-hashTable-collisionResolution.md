@@ -25,7 +25,7 @@ margin: auto;
 
 链接法，又叫开链法，顾名思义，把映射到同一散列表地址中的所有元素都放在一个链表中，如下图所示：  
 
-![hashTableChaining]({{site.baseurl}}/styles/images/algorithm/hashTable/hashTableChaining-introductionToAlgorithm(P11-2).png)  
+![hashTableChaining]({{site.imgurl}}/styles/images/algorithm/hashTable/hashTableChaining-introductionToAlgorithm(P11-2).png)  
 <center>(图片取自算法导论图11-2)</center>  
 
 链接法的优点：链接法处理冲突比较简单，处理数据存储比较灵活，数据处理的平均性能也较高效。   

@@ -21,28 +21,28 @@ tag: 教程
 
 点击'创建应用'按键，名称随便填一个，下面选开发版。如图：  
 
-![leancloud_createApp.png]({{site.baseurl}}/styles/images/githubPages/leancloud_createApp.png)
+![leancloud_createApp.png]({{site.imgurl}}/styles/images/githubPages/leancloud_createApp.png)
 
 ### 创建类
 
 左侧选择结构化数据，右侧点击创建Class，类名填 Counter，其它都默认。  
 
-![leancloud_createClass.png]({{site.baseurl}}/styles/images/githubPages/leancloud_createClass.png)  
-![leancloud_tocreateClass.png]({{site.baseurl}}/styles/images/githubPages/leancloud_tocreateClass.png)  
+![leancloud_createClass.png]({{site.imgurl}}/styles/images/githubPages/leancloud_createClass.png)  
+![leancloud_tocreateClass.png]({{site.imgurl}}/styles/images/githubPages/leancloud_tocreateClass.png)  
 
 创建完类就有了数据库表，表名即为类名 Counter，默认列有 ObjectId, ACL, CreatedAt, UpdatedAt 四列，我们创建用于存储访问量的三个列，Url(String):页面地址，Time(Number):访问次数，Title(String):页面标题。  
 
-![leancloud_addColumnResult.png]({{site.baseurl}}/styles/images/githubPages/leancloud_addColumnResult.png)  
+![leancloud_addColumnResult.png]({{site.imgurl}}/styles/images/githubPages/leancloud_addColumnResult.png)  
 
 ### 安全设置
 
 leanCloud 还有一个安全设置，左侧点击设置 -> 安全中心，在右侧有一个 web安全域名，在里面填上你博客的地址。  
 
-![leancloud_safeDomain.png]({{site.baseurl}}/styles/images/githubPages/leancloud_safeDomain.png)  
+![leancloud_safeDomain.png]({{site.imgurl}}/styles/images/githubPages/leancloud_safeDomain.png)  
 
 到这里，leanCloud 就设置完成了，点击设置里的应用凭证，把右侧的 AppID 和 AppKey 记录下来，后面博客配置中会用到。  
 
-![leancloud_appid.png]({{site.baseurl}}/styles/images/githubPages/leancloud_appid.png)  
+![leancloud_appid.png]({{site.imgurl}}/styles/images/githubPages/leancloud_appid.png)  
 
 ### 博客配置及js代码
 
@@ -211,9 +211,9 @@ leanCloud:
 
 效果如下图：  
 
-![leancloud_homePage.png]({{site.baseurl}}/styles/images/githubPages/leancloud_homePage.png)  
+![leancloud_homePage.png]({{site.imgurl}}/styles/images/githubPages/leancloud_homePage.png)  
 
-![leancloud_postPage.png]({{site.baseurl}}/styles/images/githubPages/leancloud_postPage.png)  
+![leancloud_postPage.png]({{site.imgurl}}/styles/images/githubPages/leancloud_postPage.png)  
 
 ---
 **参考**：  

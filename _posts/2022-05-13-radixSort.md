@@ -22,7 +22,7 @@ topping: true
 
 ### 动图演示
 
-![radixSort.webp]({{site.baseurl}}/styles/images/algorithm/radixSort.webp)  
+![radixSort.webp]({{site.imgurl}}/styles/images/algorithm/radixSort.webp)  
 
 
 ### 代码示例

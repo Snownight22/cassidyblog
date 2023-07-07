@@ -47,7 +47,7 @@ typedef struct {
 
 哈希表结构图：  
 
-![ngxDataStruct_hash.png]({{site.baseurl}}/styles/images/nginx/ngxDataStruct_hash.png)  
+![ngxDataStruct_hash.png]({{site.imgurl}}/styles/images/nginx/ngxDataStruct_hash.png)  
 
 nginx 中还定义了用于通配符的哈希表：  
 

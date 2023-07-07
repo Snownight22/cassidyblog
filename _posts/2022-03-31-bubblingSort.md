@@ -18,7 +18,7 @@ topping: true
 
 ### 动图演示
 
-![bubblingSort.webp]({{site.baseurl}}/styles/images/algorithm/bubblingSort.webp)  
+![bubblingSort.webp]({{site.imgurl}}/styles/images/algorithm/bubblingSort.webp)  
 
 ### 代码示例
 

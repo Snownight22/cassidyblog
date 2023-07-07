@@ -17,7 +17,7 @@ topping: true
 
 ### 动图演示
 
-![mergeSort.webp]({{site.baseurl}}/styles/images/algorithm/mergeSort.webp)  
+![mergeSort.webp]({{site.imgurl}}/styles/images/algorithm/mergeSort.webp)  
 
 ### 代码示例
 

@@ -96,7 +96,7 @@ ngx_module_t *ngx_modules[] = {
 
 Nginx 中的模块以下几种模块：NGX_CORE_MODULE, NGX_HTTP_MODULE, NGX_EVENT_MODULE, NGX_MAIL_MODULE, NGX_STREAM_MODULE，模块关系图如下：  
 
-![ngxModules.png]({{site.baseurl}}/styles/images/nginx/ngxModules.png)  
+![ngxModules.png]({{site.imgurl}}/styles/images/nginx/ngxModules.png)  
 
 ### 数据结构定义
 

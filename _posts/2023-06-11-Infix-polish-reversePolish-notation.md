@@ -11,7 +11,7 @@ topping: true
 
 我们通常见到的算术表达式就是中缀表达式，如 1+2x3+(4x5-6)x7。中缀表达式可以以树的形式表示为：  
 
-![中缀表达式]({{site.baseurl}}/styles/images/algorithm/stack/infixNotation.png)  
+![中缀表达式]({{site.imgurl}}/styles/images/algorithm/stack/infixNotation.png)  
 
 ### 波兰式
 
@@ -34,13 +34,13 @@ topping: true
 
 #### 逆波兰式计算图示
 
-![RPNCalc1.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc1.png)  
+![RPNCalc1.png]({{site.imgurl}}/styles/images/algorithm/stack/RPNCalc1.png)  
 
-![RPNCalc2.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc2.png)  
+![RPNCalc2.png]({{site.imgurl}}/styles/images/algorithm/stack/RPNCalc2.png)  
 
-![RPNCalc3.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc3.png)  
+![RPNCalc3.png]({{site.imgurl}}/styles/images/algorithm/stack/RPNCalc3.png)  
 
-![RPNCalc4.png]({{site.baseurl}}/styles/images/algorithm/stack/RPNCalc4.png)  
+![RPNCalc4.png]({{site.imgurl}}/styles/images/algorithm/stack/RPNCalc4.png)  
 
 #### 逆波兰式求值代码实现
 
@@ -82,19 +82,19 @@ int calcNotationValue(const char* RPNotation)
 
 #### 图示
 
-![infixToRPN1.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN1.png)  
+![infixToRPN1.png]({{site.imgurl}}/styles/images/algorithm/stack/infixToRPN1.png)  
 
-![infixToRPN2.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN2.png)  
+![infixToRPN2.png]({{site.imgurl}}/styles/images/algorithm/stack/infixToRPN2.png)  
 
-![infixToRPN3.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN3.png)  
+![infixToRPN3.png]({{site.imgurl}}/styles/images/algorithm/stack/infixToRPN3.png)  
 
-![infixToRPN4.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN4.png)  
+![infixToRPN4.png]({{site.imgurl}}/styles/images/algorithm/stack/infixToRPN4.png)  
 
-![infixToRPN5.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN5.png)  
+![infixToRPN5.png]({{site.imgurl}}/styles/images/algorithm/stack/infixToRPN5.png)  
 
-![infixToRPN6.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN6.png)  
+![infixToRPN6.png]({{site.imgurl}}/styles/images/algorithm/stack/infixToRPN6.png)  
 
-![infixToRPN7.png]({{site.baseurl}}/styles/images/algorithm/stack/infixToRPN7.png)  
+![infixToRPN7.png]({{site.imgurl}}/styles/images/algorithm/stack/infixToRPN7.png)  
 
 #### 中缀表达式转逆波兰式代码实现
 

@@ -69,7 +69,7 @@ struct ngx_cycle_s {
 
 ngx_init_cycle 函数主流程图：  
 
-![ngxCycleInit.png]({{site.baseurl}}/styles/images/nginx/ngxCycleInit.png)  
+![ngxCycleInit.png]({{site.imgurl}}/styles/images/nginx/ngxCycleInit.png)  
 
 ### 分步介绍
 

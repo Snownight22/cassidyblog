@@ -44,7 +44,7 @@ typedef struct {
 
 内存池结构图如下：  
 
-![memoryPoolDataStruction.svg]({{site.baseurl}}/styles/images/nginx/memoryPoolDataStruction.svg)  
+![memoryPoolDataStruction.svg]({{site.imgurl}}/styles/images/nginx/memoryPoolDataStruction.svg)  
 
 ngx_pool_t 内存储了两个单向链表：large 和 cleanup，large 是一个 ngx_pool_large_t 的结构，当 nginx 需要大于内存池数据大小的内存时，会另外申请内存并将它挂载到 large 上，cleanup 是一个 ngx_pool_cleanup_t 结构，它里面的内存也是通过内存池函数 ngx_palloc 申请到的，只是在销毁内存池时需要先调用此结构里的清理句柄 handler 来进行特殊清理工作。这两个结构体定义：  
 
@@ -70,7 +70,7 @@ struct ngx_pool_large_s {
 
 结构图：  
 
-![memoryPoolDataStruction_list.svg]({{site.baseurl}}/styles/images/nginx/memoryPoolDataStruction_list.svg)  
+![memoryPoolDataStruction_list.svg]({{site.imgurl}}/styles/images/nginx/memoryPoolDataStruction_list.svg)  
 
 ### 内存池操作函数
 

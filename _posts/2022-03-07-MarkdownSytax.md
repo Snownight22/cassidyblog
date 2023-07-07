@@ -26,7 +26,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 展示结果如下图：  
 
-![标题效果图]({{site.baseurl}}/styles/images/MarkdownSytax/head.png)
+![标题效果图]({{site.imgurl}}/styles/images/MarkdownSytax/head.png)
 
 #### 标题替代语法
 可以在标题下方行上添加任意数量的`=`来代表一级标题，或`-`代表二级标题。
@@ -39,7 +39,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：  
 
-![标题效果图2]({{site.baseurl}}/styles/images/MarkdownSytax/head2.png)
+![标题效果图2]({{site.imgurl}}/styles/images/MarkdownSytax/head2.png)
 
 
 ### 段落
@@ -52,7 +52,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：  
 
-![段落效果图]({{site.baseurl}}/styles/images/MarkdownSytax/paragraph.png)
+![段落效果图]({{site.imgurl}}/styles/images/MarkdownSytax/paragraph.png)
 
 ### 换行
 
@@ -64,7 +64,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：  
 
-![换行效果图]({{site.baseurl}}/styles/images/MarkdownSytax/line.png)
+![换行效果图]({{site.imgurl}}/styles/images/MarkdownSytax/line.png)
 
 ### 着重格式
 
@@ -76,7 +76,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：  
 
-![着重格式效果图]({{site.baseurl}}/styles/images/MarkdownSytax/bolditaly.png)
+![着重格式效果图]({{site.imgurl}}/styles/images/MarkdownSytax/bolditaly.png)
 
 ### 区块引用
 
@@ -86,7 +86,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：
 
-![区块效果图]({{site.baseurl}}/styles/images/MarkdownSytax/blockquote.png)
+![区块效果图]({{site.imgurl}}/styles/images/MarkdownSytax/blockquote.png)
 
 区块引用中可以嵌套多种标记：  
 1. 多级区块  
@@ -98,7 +98,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
     
     效果如下图：
     
-    ![区块效果图1]({{site.baseurl}}/styles/images/MarkdownSytax/blockquote1.png)
+    ![区块效果图1]({{site.imgurl}}/styles/images/MarkdownSytax/blockquote1.png)
     
 2. 区块引用中嵌套段落  
     区块引用中如果嵌套了段落，那么段落间的空行中也要添加大于号(>)，如：
@@ -109,7 +109,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
     
     效果如下图：
     
-    ![区块效果图2]({{site.baseurl}}/styles/images/MarkdownSytax/blockquote2.png)
+    ![区块效果图2]({{site.imgurl}}/styles/images/MarkdownSytax/blockquote2.png)
 
 3. 区块引用中嵌套列表  
     区块引用中也可以嵌套列表（列表定义方式见[列表](#ListHead)），如：
@@ -124,7 +124,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
     
     效果如下图：  
     
-    ![区块效果图3]({{site.baseurl}}/styles/images/MarkdownSytax/blockquote3.png)
+    ![区块效果图3]({{site.imgurl}}/styles/images/MarkdownSytax/blockquote3.png)
 
 ### 列表    {#ListHead}
 
@@ -140,7 +140,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：
 
-![有序列表效果图]({{site.baseurl}}/styles/images/MarkdownSytax/list.png)
+![有序列表效果图]({{site.imgurl}}/styles/images/MarkdownSytax/list.png)
 
 #### 无序列表
 
@@ -160,7 +160,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
  
 效果如下图：
 
-![无序列表效果图]({{site.baseurl}}/styles/images/MarkdownSytax/list2.png)
+![无序列表效果图]({{site.imgurl}}/styles/images/MarkdownSytax/list2.png)
 
 ### 代码
 
@@ -170,7 +170,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：
 
-![代码效果图]({{site.baseurl}}/styles/images/MarkdownSytax/code1.png)
+![代码效果图]({{site.imgurl}}/styles/images/MarkdownSytax/code1.png)
 
 对于代码块，可以在代码块中的每一行缩进至少四个空格或一个制表符， 如：  
 
@@ -182,7 +182,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果如下图：
 
-![代码效果图2]({{site.baseurl}}/styles/images/MarkdownSytax/code2.png)
+![代码效果图2]({{site.imgurl}}/styles/images/MarkdownSytax/code2.png)
 
 ### 水平线
 
@@ -195,7 +195,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 三个效果相同，如下图：
 
-![水平线效果图]({{site.baseurl}}/styles/images/MarkdownSytax/horizontalline.png)
+![水平线效果图]({{site.imgurl}}/styles/images/MarkdownSytax/horizontalline.png)
 
 
 ### 超链接
@@ -246,7 +246,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果：
 
-![示例图片]({{site.baseurl}}/styles/images/MarkdownSytax/example.jpeg)
+![示例图片]({{site.imgurl}}/styles/images/MarkdownSytax/example.jpeg)
 
 还可以给图片添加链接， 如：
 
@@ -254,7 +254,7 @@ Markdown的语法比较简单，而且每个处理器对于语法的支持也不
 
 效果：
 
-[![示例链接图片]({{site.baseurl}}/styles/images/MarkdownSytax/example.jpeg)](https://snownight22.github.io/TTworksBlog/)
+[![示例链接图片]({{site.imgurl}}/styles/images/MarkdownSytax/example.jpeg)](https://snownight22.github.io/TTworksBlog/)
 
 
 ## MarkDown拓展语法
@@ -311,7 +311,7 @@ Markdown可以实现表格，可以使用三个或多个连字符`---`创建每�
 
 效果如图：
 
-![代码块效果图]({{site.baseurl}}/styles/images/MarkdownSytax/code3.png)
+![代码块效果图]({{site.imgurl}}/styles/images/MarkdownSytax/code3.png)
 
 ### 标题编号    {#titleNo}
 
@@ -351,7 +351,7 @@ Markdown可以实现表格，可以使用三个或多个连字符`---`创建每�
 
  效果如下图：
  
- ![任务清单效果图]({{site.baseurl}}/styles/images/MarkdownSytax/tasklist.png)
+ ![任务清单效果图]({{site.imgurl}}/styles/images/MarkdownSytax/tasklist.png)
  
 ### 删除线
  

@@ -17,7 +17,7 @@ topping: true
 
 ### 动图演示
 
-![bucketSort.webp]({{site.baseurl}}/styles/images/algorithm/bucketSort.webp)  
+![bucketSort.webp]({{site.imgurl}}/styles/images/algorithm/bucketSort.webp)  
 
 
 ### 代码示例

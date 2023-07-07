@@ -18,7 +18,7 @@ topping: true
 
 ### 动图演示
 
-![insertSort.webp]({{site.baseurl}}/styles/images/algorithm/insertSort.webp)  
+![insertSort.webp]({{site.imgurl}}/styles/images/algorithm/insertSort.webp)  
 
 ### 代码示例
 

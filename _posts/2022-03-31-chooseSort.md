@@ -17,7 +17,7 @@ topping: true
 
 ### 动图演示
 
-![chooseSort.webp]({{site.baseurl}}/styles/images/algorithm/chooseSort.webp)  
+![chooseSort.webp]({{site.imgurl}}/styles/images/algorithm/chooseSort.webp)  
 
 ### 代码示例
 

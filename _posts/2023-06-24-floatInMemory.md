@@ -25,11 +25,11 @@ $$ \pm  fraction * 2^{exponent} $$
 
 单精度浮点数中符号位占 1 位，指数部分占 8 位，尾数部分占后 23 位：  
 
-![floatInMemory.png]({{ site.baseurl }}/styles/images/theory/floatInMemory.png)  
+![floatInMemory.png]({{ site.imgurl }}/styles/images/theory/floatInMemory.png)  
 
 双精度浮点数中符号位占 1 位，指数部分占 11 位，尾数部分占后 52 位：  
 
-![doubleInMemory.png]({{ site.baseurl }}/styles/images/theory/doubleInMemory.png)  
+![doubleInMemory.png]({{ site.imgurl }}/styles/images/theory/doubleInMemory.png)  
 
 拓展双精度浮点数中符号位占 1 位，指数部分占 15 位，尾数部分占后 64 位：  
 
@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
 
 打印结果为：  
 
-![binaryResult.png]({{ site.baseurl }}/styles/images/theory/binaryResult.png)  
+![binaryResult.png]({{ site.imgurl }}/styles/images/theory/binaryResult.png)  
 
 #### 非规约数
 

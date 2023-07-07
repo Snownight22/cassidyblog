@@ -12,14 +12,14 @@ tags: Linux
 
 可以通过 `ulimit -a` 查看系统各种资源限制，如 core 文件大小，数据段大小，打开文件数目等等。如：  
 
-![ulimit_0.png]({{site.baseurl}}/styles/images/tips/ulimit_0.png)  
+![ulimit_0.png]({{site.imgurl}}/styles/images/tips/ulimit_0.png)  
 
 可以看到，core 文件默认大小为 0, 因此不会产生 core 文件，使用 `ulimit -c n` 来设置 core 文件大小，单位为 KB，如：
 
 `ulimit -c 100` 设置 core 文件最大为 100KB。  
 `ulimit -c unlimited` 不限制 core 文件大小。  
 
-![ulimit_unlimited.png]({{site.baseurl}}/styles/images/tips/ulimit_unlimited.png)  
+![ulimit_unlimited.png]({{site.imgurl}}/styles/images/tips/ulimit_unlimited.png)  
 
 此设置只针对当前会话有效，如果想要长久生效，可以将配置写入 `/etc/security/limits.conf` 中。  
 

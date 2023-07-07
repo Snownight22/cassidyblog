@@ -13,7 +13,7 @@ Nginx 启动流程是由 nginx.c 中的 main 函数完成的，这里是 nginx �
 
 #### 初始化流程图
 
-![ngxStartProcess.png]({{site.baseurl}}/styles/images/nginx/ngxStartProcess.png)  
+![ngxStartProcess.png]({{site.imgurl}}/styles/images/nginx/ngxStartProcess.png)  
 
 #### 分步介绍
 
