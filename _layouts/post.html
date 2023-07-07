@@ -15,7 +15,8 @@ title: {{ page.title }}
         <span class="post-category">
             <i class="icon-post-category">
             {% for page_category in page.categories %}
-                <a href="{{ site.baseurl }}/category/#{{ page_category }}">{{ page_category }}</a>
+                <!--<a href="{{ site.baseurl }}/category/#{{ page_category }}">{{ page_category }}</a>-->
+                <a href="{{ site.baseurl }}/categories?category={{ page_category }}">{{ page_category }}</a>
                 <!--{% unless forloop.last %} | {% endunless %}-->
             {% endfor %}
             </i>
