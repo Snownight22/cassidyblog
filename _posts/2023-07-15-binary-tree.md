@@ -4,7 +4,7 @@ title: 抽象数据类型(ADT)-二叉树
 date:   2023-07-15 22:30:00 +0800
 categories: [数据结构]
 tags: [C]
-topping: false
+topping: true
 ---
 
 ### 二叉树定义
