@@ -4,7 +4,7 @@ title: 二叉树的四种遍历方法
 date:   2023-07-16 22:30:00 +0800
 categories: [Algorithm, 数据结构]
 tags: [C]
-topping: false
+topping: true
 ---
 
 二叉树有四种遍历方式，先序遍历，中序遍历，后序遍历以及层次遍历。  
