@@ -54,8 +54,8 @@ plugins:
 
 gitalk:
   enable: true
-  clientID: 7bd21fe83445766f6c9d
-  clientSecret: b3aeead12d9e287bae886a2cb3e9597768ff26ae
+  clientID: afddab7de04debfd2344
+  clientSecret: daa6c46733b7e6a72d2eec30ec5c7bf61c279bdf
 
 
 # leanCloud 配置
