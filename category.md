@@ -24,7 +24,9 @@ permalink: /category/
   <h3 id="{{ category | first }}">{{ category | first }}</h3>
   <ul class="arc-list">
       {% for post in category.last %}
+        {% if post.action != 'hidding' %}
           <li><span class="date">{{ post.date | date: "%B %e, %Y" }}</span><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></li>
+        {% endif %}
       {% endfor %}
   </ul>
   {% endfor %}

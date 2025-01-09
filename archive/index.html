@@ -16,6 +16,7 @@ permalink: /archive/
 
 <ul class="archive">
   {% for post in site.posts %}
+  {% if post.action != 'hidding' %}
     {% unless post.next %}
       <h2 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2>
     {% else %}
@@ -44,6 +45,7 @@ permalink: /archive/
       </span>
 
     </li>
+  {% endif %}
   {% endfor %}
 </ul>
 
@@ -51,12 +53,14 @@ permalink: /archive/
 <script>
   var yearList = {};
   {% for post in site.posts %}
+  {% if post.action != 'hidding' %}
       var year = "{{ post.url | slice: 1, 4 }}";
       if (yearList[year] == null) {
         yearList[year] = 1;
       } else {
         yearList[year]++;
       }
+  {% endif %}
   {% endfor %}
   for (var year in yearList) {
     document.getElementById(year).innerText = year + " " + "(" + yearList[year] +")";

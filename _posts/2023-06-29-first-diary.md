@@ -4,6 +4,7 @@ title: "换主题了"
 date: 2023-06-29   
 categories: [Plan&Review]
 excerpt: ""
+action: hidding
 ---
 
 这两周看了大量的 jekyll 主题，感觉这款主题特别好看，特别有生活气息。本来想用这个主题新建一个博客，用于记录生活的点滴。但是经过一番修改后，除了没有导航栏和搜索功能，其它都可以使用，所以用它替换我的[技术博客](https://snownight22.github.io/TTworksBlog/)的主题。之后逐步迁移到这里。  

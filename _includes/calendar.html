@@ -89,11 +89,13 @@
 <script>
     var urlJSON = {
     {% for post in site.posts %}
-    "{{ post.url | slice: 1, 10 | replace: '-', '/' | replace: '/0', '/' | strip }}": {
+        {% if post.action != 'hidding' %}
+        "{{ post.url | slice: 1, 10 | replace: '-', '/' | replace: '/0', '/' | strip }}": {
         url: "{{ site.baseurl }}{{ post.url }}",
         title: "{{ post.title }}",
         index: {{ forloop.rindex }}
-    },
+        },
+        {% endif %}
     {% endfor %}
     "end": "end"
     };
