@@ -44,6 +44,23 @@ title: {{ page.title }}
 
 {{ page.content }}
 
+{% if site.valine.enable %}
+<script src="{{ '/assets/js/Valine.min.js' | prepend: site.baseurl }}"></script>
+<!--<script src="//unpkg.com/valine/dist/Valine.min.js"></script>-->
+<p><br/>欢迎评论：</p>
+<div id="valine_comment" class="fb_comments_container"></div>
+<script>
+    new Valine({
+        el: '#valine_comment',
+        visitor: true,
+        app_id: '{{site.valine.app_id}}',
+        app_key: '{{site.valine.app_key}}',
+        placeholder: '{{site.valine.placeholder}}',
+        avatar: '{{site.valine.avatar}}',
+    });
+</script>
+{% endif %}
+
 {% if site.gitalk.enable %}
 {% include comment.html %}
 {% endif %}
